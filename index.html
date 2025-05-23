@@ -1,35 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="./dist/output.css" rel="stylesheet" type="text/css">
+
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
-<body>
-  Victor Crest
-  26
-  London
 
-  80K
-  Followers
+<body class="h-screen">
+  <main class="w-full h-screen bg-dark-cyan z-0 flex flex-col justify-center px-6">
+    <img src="./images/bg-pattern-top.svg" alt="pattern"
+      class="z-10 absolute scale-150 bottom-[75%] right-[70%] opacity-60">
+    <div class="bg-white z-30 sticky flex flex-col justify-center text-center rounded-2xl h-fit">
+      <div class="h-full">
+        <img src="./images/bg-pattern-card.svg" alt="pattern-card" class="bg-cover rounded-tl-2xl rounded-tr-2xl">
+      </div>
+      <div class="h-full">
+        <section class="flex flex-col justify-center items-center  relative -top-12 gap-2">
+          <img src="./images/image-victor.jpg" alt="victor" class="rounded-full ring-6 ring-white ">
+          <p class="fontBold pt-4">Victor Crest
+            <span class="font-normal fontDarkGrayishBlue">26</span>
+          </p>
+          <p class="fontDarkGrayishBlue">London</p>
+        </section>
 
-  803K
-  Likes
-
-  1.4K
-  Photos
+        <section class="flex  justify-around border-t-1 border-gray-200 px-4 pt-6  relative -top-6 opacity-70">
+          <div>
+            <p class="fontBold">80K</p>
+            <p class="fontDarkGrayishBlue">Followers</p>
+          </div>
+          <div>
+            <p class="fontBold">803K</p>
+            <p class="fontDarkGrayishBlue">Likes</p>
+          </div>
+          <div>
+            <p class="fontBold">1.4K</p>
+            <p class="fontDarkGrayishBlue">Photos</p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <img src="./images/bg-pattern-bottom.svg" alt="pattern"
+      class="z-10 absolute scale-150 top-[75%] left-[75%] opacity-70">
+  </main>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">C.Junior</a>.
   </div>
 </body>
+
 </html>
