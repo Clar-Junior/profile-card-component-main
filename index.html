@@ -8,61 +8,70 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="./dist/output.css" rel="stylesheet" type="text/css">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet"
+    crossorigin="anonymous">
   <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
-<body class="h-screen">
-  <main class="w-full h-screen bg-dark-cyan z-0 flex flex-col justify-center px-6">
-    <img src="./images/bg-pattern-top.svg" alt="pattern"
-      class="z-10 absolute scale-150 bottom-[75%] right-[70%] opacity-60">
-    <div class="bg-white z-30 sticky flex flex-col justify-center text-center rounded-2xl h-fit">
-      <div class="h-full">
-        <img src="./images/bg-pattern-card.svg" alt="pattern-card" class="bg-cover rounded-tl-2xl rounded-tr-2xl">
+<body>
+  <div
+    class="h-screen w-screen font-[kumbh_sans] bg-dark-cyan z-0 flex flex-col min-md:flex-row justify-center min-md:items-center">
+    <div class="w-full h-1/2 min-md:w-full min-md:h-full overflow-hidden flex items-start justify-start border-0">
+
+      <div class="w-full h-full overflow-hidden ">
+        <img src="./images/bg-pattern-top.svg" alt="pattern"
+          class="w-full h-full relative z-0 scale-200 bottom-[50%] right-[100%] -rotate-[20deg] min-md:scale-125 min-md:bottom-[52%] min-md:right-[15%] min-md:-rotate-[5deg]">
       </div>
+    </div>
+
+    <div class="absolute bg-white z-20 flex flex-col justify-center text-center rounded-2xl h-fit shadow-lg mx-6">
+      <div class="h-full">
+        <img src="./images/bg-pattern-card.svg" alt="pattern-card"
+          class="bg-cover rounded-tl-2xl rounded-tr-2xl border-b-1 border-b-dark-cyan">
+      </div>
+
       <div class="h-full">
         <section class="flex flex-col justify-center items-center  relative -top-12 gap-2">
           <img src="./images/image-victor.jpg" alt="victor" class="rounded-full ring-6 ring-white ">
           <p class="fontBold pt-4">Victor Crest
-            <span class="font-normal fontDarkGrayishBlue">26</span>
+            <span class="fontDarkGrayishBlue font-normal">26</span>
           </p>
-          <p class="fontDarkGrayishBlue">London</p>
+          <p class="fontDarkGrayishBlue text-[14px]">London</p>
         </section>
 
-        <section class="flex  justify-around border-t-1 border-gray-200 px-4 pt-6  relative -top-6 opacity-70">
+        <section class="flex  justify-around border-t-1 border-gray-200 px-4 pt-6  relative -top-6 opacity-85">
           <div>
             <p class="fontBold">80K</p>
-            <p class="fontDarkGrayishBlue">Followers</p>
+            <p class="fontVeryDarkBlue text-[11px] tracking-widest">Followers</p>
           </div>
           <div>
             <p class="fontBold">803K</p>
-            <p class="fontDarkGrayishBlue">Likes</p>
+            <p class="fontVeryDarkBlue text-[11px] tracking-widest">Likes</p>
           </div>
           <div>
             <p class="fontBold">1.4K</p>
-            <p class="fontDarkGrayishBlue">Photos</p>
+            <p class="fontVeryDarkBlue text-[11px] tracking-widest">Photos</p>
           </div>
         </section>
       </div>
     </div>
-    <img src="./images/bg-pattern-bottom.svg" alt="pattern"
-      class="z-10 absolute scale-150 top-[75%] left-[75%] opacity-70">
-  </main>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">C.Junior</a>.
+
+    <div
+      class="w-full h-1/2 min-md:w-full min-md:h-full overflow-hidden max-md:flex max-md:items-end max-md:justify-end border-0">
+      <div class=" w-full h-full overflow-hidden">
+        <img src="./images/bg-pattern-bottom.svg" alt="pattern"
+          class="w-full h-full relative z-10 scale-200 top-[50%] left-[100%] rotate-[20deg] min-md:scale-150 min-md:top-[75%] min-md:left-[24%] min-md:-rotate-[25deg]">
+      </div>
+    </div>
   </div>
+  <footer>
+    <div class="attribution py-3">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">C.Junior</a>.
+    </div>
+  </footer>
 </body>
 
 </html>

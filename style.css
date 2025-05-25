@@ -5,11 +5,22 @@
 	--color-very-dark-desaturated-blue: hsl(229, 23%, 23%);
 	--color-dark-grayish-blue: hsl(227, 10%, 46%);
 	--color-dark-gray: hsl(0, 0%, 59%);
+	--font-kumbh-sans: "Kumbh_Sans";
+	--color-dark-blue: hsl(228, 45%, 44%);
 }
 
 .fontBold {
-	@apply font-bold text-[20px];
+	@apply font-bold text-[18px];
+}
+.fontVeryDarkBlue {
+	@apply text-very-dark-desaturated-blue;
 }
 .fontDarkGrayishBlue {
-	@apply text-dark-grayish-blue;
+	@apply text-dark-gray;
+}
+.attribution {
+	@apply text-[11px] text-center;
+}
+.attribution a {
+	@apply text-dark-blue;
 }
