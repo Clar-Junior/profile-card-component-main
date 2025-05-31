@@ -32,8 +32,8 @@ Desktop - 1440px
 
 ### Links
 
--   Solution URL: [Github](https://your-solution-url.com)
--   Live Site URL: [Github Pages](https://your-live-site-url.com)
+-   Solution URL: [Github](https://github.com/Clar-Junior/profile-card-component-main)
+-   Live Site URL: [Github Pages](https://clar-junior.github.io/profile-card-component-main/)
 
 ## My process
 
